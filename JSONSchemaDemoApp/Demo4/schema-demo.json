@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "tipoDocumento": { "type": "string" },
+    "numeroDocumento": { "type": "string" }
+  },
+  "if": {
+    "properties": { "tipoDocumento": { "const": "Pasaporte" } }
+  },
+  "then": {
+    "properties": { "numeroDocumento": { "minLength": 10 } }
+  }
+}

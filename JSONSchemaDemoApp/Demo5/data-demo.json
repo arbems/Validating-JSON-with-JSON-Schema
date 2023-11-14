@@ -1,0 +1,27 @@
+{
+  "EntityId": {
+    "Empresa": 10,
+    "NumeroPoliza": 3020700031090,
+    "NumeroSuplemento": -1,
+    "test1": 1
+  },
+  "DocumentTitle": "azure.jpg",
+  "TipoDocumento": 19,
+  "MedioDeEntrada": 4,
+  "Aviso": false,
+  "AvisoManual": false,
+  "OriginalArchivado": false,
+  "NivelDeSeguridadAlto": false,
+  "Observaciones": "Esto es un prueba",
+  "AuditoriaInfo": {
+    "AltaInfo": {
+      "Fecha": "2023-09-07T11:49:55.262+02:00",
+      "UsuarioDirectorioActivo": "omora",
+      "UsuarioAire": "SUMSIS30",
+      "NombreUsuario": "OSCAR MORA ORTEGA",
+      "RolUsuario": "GD_ADMINISTRADOR",
+      "ActividadUsuario": "EMPLEADOS GRUPO"
+    }
+  },
+  "NumeroSecuencial": 293
+}

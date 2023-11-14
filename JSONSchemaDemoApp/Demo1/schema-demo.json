@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "EntityId": {
+      "type": "object",
+      "properties": {
+        "Empresa": {
+          "type": "integer",
+          "minimum": -1
+        },
+        "NumeroPoliza": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "NumeroSuplemento": {
+          "type": "integer",
+          "minimum": -1
+        }
+      },
+      "required": [ "Empresa", "NumeroPoliza", "NumeroSuplemento" ]
+    },
+    "DocumentTitle": { "type": "string" },
+    "TipoDocumento": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MedioDeEntrada": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "Aviso": { "type": "boolean" },
+    "AvisoManual": { "type": "boolean" },
+    "OriginalArchivado": { "type": "boolean" },
+    "NivelDeSeguridadAlto": { "type": "boolean" },
+    "Observaciones": {
+      "type": "string",
+      "maxLength": 100
+    }, // Establecer maxLength a 100
+    "DatosEntrada": {
+      "type": "string",
+      "maxLength": 100
+    }, // Establecer maxLength a 100
+    "AuditoriaInfo": {
+      "type": "object",
+      "properties": {
+        "AltaInfo": {
+          "type": "object",
+          "properties": {
+            "Fecha": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "UsuarioDirectorioActivo": { "type": "string" },
+            "UsuarioAire": { "type": "string" },
+            "NombreUsuario": { "type": "string" },
+            "RolUsuario": { "type": "string" },
+            "ActividadUsuario": { "type": "string" }
+          },
+          "required": [ "Fecha", "UsuarioDirectorioActivo", "UsuarioAire", "NombreUsuario", "RolUsuario", "ActividadUsuario" ]
+        }
+      }
+    },
+    "NumeroSecuencial": { "type": "integer" }
+  },
+  "required": [ "EntityId", "DocumentTitle", "TipoDocumento", "MedioDeEntrada", "Aviso", "AvisoManual", "OriginalArchivado", "NivelDeSeguridadAlto", "Observaciones", "AuditoriaInfo", "NumeroSecuencial" ]
+}
